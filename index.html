@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>HALA</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+                                                                
+        header {
+            Background-color: #222;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        #hero {
+            background: linear-gradient(to right, #9da1ac, #326df7);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: chocolate;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 2rem;
+        }
+
+        .features {
+            padding: 2rem;
+            text-align: center;
+            display: flex;
+        }
+    </style>
+</head>
+<header>
+    <div class="logo">
+        HALAS HOME
+
+    </div>
+    <nav>
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero">
+    <button onclick="window.alert('welcome to my page')">click me</button>
+
+    <h1>WELCOME TO HALA'S HOME OF LUXURY PRODUCTS </h1>
+    <p>POV:Beautiful yet Affordable.</p>
+    <a href="#" class="btn">Get started</a>
+
+</section>
+<h2 id="section-title">Our Products</h2>
+<section class="features" id="features">
+
+    <div class="feature-item">
+
+        <button onclick="showProduct(90)">show product less than 100 usd</button>
+        <p>NEW ITEM!</p>
+        
+        <img id="space_500" src="C:\Users\samha\OneDrive\Desktop\AISHA\mac book.jpg"
+            alt="product of 500" width="200px" height="150px">
+
+    </div>
+    </div>
+    <div class="feature-item">
+
+        <button onclick="showProduct(500)">show product less than 500 usd</button>
+        <p>NEW ITEM!</p>
+        <div>
+            <img id="space_five"onclick="shoeproduct(800)" src="C:\Users\samha\OneDrive\Desktop\AISHA\shoes no 1.jpg"
+                alt="product of 500" width="200px" height="150px">
+
+        </div>
+    </div>
+    <div class="feature-item">
+
+        <button onclick="showProduct(2000)">show product greater than 2000 usd</button>
+        <p>NEW ITEM!</p>
+        <div>
+            <img id="space_500" onclick="showProduct(500)" src="C:\Users\samha\OneDrive\Desktop\AISHA\clothes.jpg"
+                alt="product of 500" width="200px" height="150px">
+        </div>
+
+    </div>
+
+</section>
+
+<section class="product">
+    <h2>our list items</h2>
+    <div class="product-item">
+        <img src="mac book.jpg" alt="product" width="200px" height="150px">
+        <h4 class="product-title">Mac book</h4>
+        <p class="product-price">$999</p>
+        <a href="" class="button">Buy now</a>
+    </div>
+
+    <div class="product-item">
+        <img src="shoes no 1.jpg" alt="product" width="200px" height="150px">
+        <h4 class="product-title">shoes</h4>
+        <p class="product-price">$102</p>
+        <a href="" class="button">Buy now</a>
+    </div>
+
+    <div class="product-item">
+        <img src="clothes.jpg" alt="product" width="200px" height="150px">
+        <h4 class="product-title">clothes</h4>
+        <p class="product-price">$222</p>
+        <a href="" class="button">Buy now</a>
+    </div>
+</section>
+
+
+
+
+
+<button onclick="window.print()">Print this page</button>
+
+
+<script>
+    function showProduct(price) {
+        x = 5
+        y = 6
+        z = x+y;
+        
+        /* (price <= 100) {
+            document.getElementById('space_100').innerHTML = '100 usd price displayed';
+        } else if (price > 100) {
+            document.getElementById('space_100').innerHTML = 'less than 500 displayed';
+        } else if (price >= 300 && price <= 500) {
+            document.getElementById('space_100').innerHTML = 'between 300 and 500 usd price displayed';
+        }*/
+console.log(price);
+        if (price <= 500) {
+            document.getElementById('space_five').src =  "C:/Users/samha/OneDrive/Desktop/AISHA/clothes.jpg";
+            //image_space.src = "C:\Users\samha\OneDrive\Desktop\my website\light off.png";
+        }
+
+        if (price > 2000) {
+            document.getElementById('').style.display = "block";
+        } else if (price == 1000) {
+        } {
+            document.getElementById('product image').style.display ="none";
+        }
+    }
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
